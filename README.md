@@ -74,7 +74,10 @@ Entites:
 - Recipe
 - User
 <img width="2646" height="6144" alt="image" src="https://github.com/user-attachments/assets/0fdeb2f9-f257-43f6-83fd-4bf3ab6e896a" />
+
 Draft of our UML Diagram.
+
+
 
 API Name: spoonacular recipe 
 API link: https://spoonacular.com/food-api/
