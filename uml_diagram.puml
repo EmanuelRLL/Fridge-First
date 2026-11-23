@@ -1,0 +1,61 @@
+classDiagram
+direction TB
+    class Ingredient {
+	    -String name
+	    +getName() String
+	    +equals(Object) boolean
+	    +hashCode() int
+    }
+
+    class Pantry {
+	    -Set~Ingredient~ ingredients
+	    +add(Ingredient) boolean
+	    +remove(Ingredient) boolean
+	    +contains(Ingredient) boolean
+	    +getIngredients() List~Ingredient~
+    }
+
+    class DietaryPreferences {
+	    -Set~String~ allergies
+	    -boolean vegan
+	    -int minCalories
+	    -int maxCalories
+	    +isValidRange() boolean
+	    +isAllergicTo(Ingredient) boolean
+	    +allowsCalories(Recipe) boolean
+    }
+
+    class Recipe {
+	    -int id
+	    -String title
+	    -List~Ingredient~ ingredients
+	    -Integer calories
+	    +containsAllergen(DietaryPreferences) boolean
+	    +countMatches(Pantry) int
+	    +hasCalories() boolean
+    }
+
+    class User {
+	    -String username
+	    -Pantry pantry
+	    -DietaryPreferences preferences
+	    -Set~Recipe~ favouriteRecipes
+	    +addFavouriteRecipe(Recipe) boolean
+	    +removeFavouriteRecipe(Recipe) boolean
+	    +isFavouriteRecipe(Recipe) boolean
+		+setDietaryPreferences(DietaryPreferences) void
+		+getUsername() String
+		+getPantry() Pantry
+		+getDietaryPreferences() DietaryPreferences
+		+getFavouriteRecipes() Set<Recipe>
+    }
+
+    Pantry o-- Ingredient
+    Recipe o-- Ingredient
+    User *-- Pantry
+    User o-- DietaryPreferences
+    User o-- Recipe : favourites
+    DietaryPreferences ..> Ingredient : uses
+    DietaryPreferences ..> Recipe : uses
+    Recipe ..> DietaryPreferences : uses
+    Recipe ..> Pantry : uses
