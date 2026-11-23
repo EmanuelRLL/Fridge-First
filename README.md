@@ -74,7 +74,7 @@ Entites:
 - Recipe
 - User
 
-<img width="3061" height="7490" alt="Recipe Pantry Matching Model-2026-11-23-184717" src="https://github.com/user-attachments/assets/73f810ca-5473-4f95-ade2-9378262506f4" />
+<img width="3775" height="7595" alt="Untitled diagram-2026-11-23-194947" src="https://github.com/user-attachments/assets/0ee1c653-0028-4ab1-bac4-2f92212a3c36" />
 
 Draft of our UML Diagram.
 
