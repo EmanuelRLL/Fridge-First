@@ -73,7 +73,8 @@ Entites:
 - DietaryPreferences
 - Recipe
 - User
-<img width="2646" height="6144" alt="image" src="https://github.com/user-attachments/assets/0fdeb2f9-f257-43f6-83fd-4bf3ab6e896a" />
+
+<img width="3061" height="7490" alt="Recipe Pantry Matching Model-2026-11-23-184717" src="https://github.com/user-attachments/assets/73f810ca-5473-4f95-ade2-9378262506f4" />
 
 Draft of our UML Diagram.
 
